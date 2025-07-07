@@ -17,11 +17,12 @@
   nav {
     display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; padding: 1rem;
   }
-  nav button {
+  nav button, nav a {
     background: #000; border: 1px solid #0f0; color: #0f0;
-    padding: 0.5rem 1rem; cursor: pointer;
+    padding: 0.5rem 1rem; cursor: pointer; text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
   }
-  nav button:hover { background: #0f0; color: #000; }
+  nav button:hover, nav a:hover { background: #0f0; color: #000; }
   main { padding: 2rem; max-width: 1000px; margin: auto; }
   section { display: none; }
   section.active { display: block; }
@@ -43,6 +44,7 @@
   <button onclick="showSection('webhook')">Webhook</button>
   <button onclick="showSection('scanner')">Port Scanner</button>
   <button onclick="showSection('payload')">Payload Builder</button>
+  <a href="https://github.com/Xenos-cmd/Xenos-Social-Engineering-Toolkit" target="_blank">Xenos Social Engineering Toolkit</a>
 </nav>
 <main>
   <section id="console" class="active">
